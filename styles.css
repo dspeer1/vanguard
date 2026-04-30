@@ -166,6 +166,13 @@ input:checked ~ ul {
     max-height: 500px;
 }
 
+#hero {
+    background-image: url("images/vanguard-hero.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
