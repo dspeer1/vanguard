@@ -72,19 +72,32 @@ body {
 }
 
 header {
-    display: inline-block;
     background-color: var(--black);
     color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header section {
+    display: flex;
 }
 
 header img {
-    width: 100px;
-    display: inline-block;
-    margin: 0 auto;
+    width: 75px;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: 700;
+    align-content: center;
 }
 
 nav {
     background-color: var(--black);
+    display: block;
+    text-align: right;
 }
 nav ul {
     width: 100%;
