@@ -96,7 +96,7 @@ h1 {
 
 h2 {
     font-size: 175%;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 nav {
@@ -185,9 +185,9 @@ input:checked ~ ul {
 }
 
 #hero h2 {
-    padding: 20px;
     color: var(--white);
     margin: 0;
+    padding: 20px;
 }
 
 #hero p {
