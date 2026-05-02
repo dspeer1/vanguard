@@ -193,16 +193,13 @@ input:checked ~ ul {
 }
 
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/vanguard-hero.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: grid;
+    place-items: center;
     text-align: center;
-    padding: 100px 20px;
+    padding: 1rem;
+    overflow: hidden;
 }
 
 #hero h2 {
@@ -319,12 +316,25 @@ tr:nth-child(odd) {
     color: var(--white);
 }
 
+@keyframes stepUp {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: var(--height);
+    }
+}
 
+.bar {
+    animation: stepUp 1s ease-in-out forwards;
+}
 
 #contact {
     background-color: var(--black);
     color: var(--white);
 }
+
+
 
 footer {
     background-color: var(--black);
@@ -345,31 +355,7 @@ footer {
     margin: 0 auto;
 }
 
-/* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
-    height: 80vh;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    padding: 1rem;
-    overflow: hidden;
-}
 
-
-
-@keyframes stepUp {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: var(--height);
-    }
-}
-/* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
-.bar {
-    animation: stepUp 1s ease-in-out forwards;
-}
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
