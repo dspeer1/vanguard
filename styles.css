@@ -70,6 +70,7 @@ table {
 body {
     font-family: "Inter", sans-serif;
     line-height: 25px;
+    min-width: 400px;
 }
 
 header {
@@ -98,9 +99,19 @@ p {
 }
 
 h1 {
+    display: flex;
     font-size: 200%;
     font-weight: 700;
     align-content: center;
+    justify-content: center;
+}
+
+h1::before {
+    content: "";
+    left: -.5rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url('images/vanguard-logo.svg') no-repeat center/contain;
 }
 
 h2 {
@@ -256,10 +267,12 @@ input:checked ~ ul {
 table {
     border-collapse: collapse;
     background-color: var(--black);
+    margin: 0 auto;
 }
 
 th {
     background-color: var(--black);
+    font-weight: bold;
 }
 
 th, td {
@@ -272,6 +285,41 @@ th, td {
 tr:nth-child(odd) {
     background-color: var(--charcoal);
 }
+
+#bar-chart {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 1rem;
+    height: 300px;
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    position: relative;
+}
+
+.bar {
+    width: 50px;
+    background: var(--charcoal);
+    border-radius: 10px;
+    position: relative;
+    transition: height 0.25s ease-in;
+    height: 0;
+}
+
+.bar::after {
+    content: attr(data-year);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+
 
 #contact {
     background-color: var(--black);
@@ -308,49 +356,8 @@ footer {
     overflow: hidden;
 }
 
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
 
-    left:-.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
-    background: url('images/vanguard-logo.svg') no-repeat center/contain;
 
-}
-/* THIS ONE IS DONE FOR YOU */
-#bar-chart {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: flex-end;
-    justify-content: space-around;
-    gap: 1rem;
-    height: 300px;
-    width: 100%;
-    max-width: 800px;
-    padding: 1rem;
-    position: relative;
-}
-/* ADD ON TRANSITION ON HEIGHT */
-.bar {
-    width: 50px;
-    background: var(--charcoal);
-    border-radius: 10px;
-    position: relative;
-    transition: ;
-    height: 0;
-}
-/* THIS ONE IS DONE FOR YOU */
-.bar::after {
-    content: attr(data-year);
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--white);
-}
 @keyframes stepUp {
     0% {
         height: 0;
