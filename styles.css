@@ -68,7 +68,6 @@ table {
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
 body {
-    background-color: var(--charcoal);
     font-family: "Inter", sans-serif;
     line-height: 25px;
 }
@@ -94,6 +93,10 @@ main {
     background-color: var(--white);
 }
 
+p {
+    padding: 20px;
+}
+
 h1 {
     font-size: 200%;
     font-weight: 700;
@@ -103,6 +106,7 @@ h1 {
 h2 {
     font-size: 175%;
     font-weight: 700;
+    padding: 20px;
 }
 
 nav {
@@ -192,23 +196,20 @@ input:checked ~ ul {
 
 #hero h2 {
     color: var(--white);
-    margin: 0;
-    padding: 20px;
 }
 
 #hero p {
     color: var(--white);
-    padding: 10px;
 }
 
 #hero a {
-  display: inline-block;
-  background-color: var(--blue);
-  text-decoration: none;
-  color: var(--white);
-  padding: 15px 25px;
-  margin-top: 15px;
-  font-weight: bold;
+    display: inline-block;
+    background-color: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    padding: 15px 25px;
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 #hero h2, #hero p, #hero a {
@@ -221,15 +222,6 @@ input:checked ~ ul {
     max-width: 400px;
 }
 
-#about h2 {
-    font-weight: 700;
-    padding: 20px;
-}
-
-#about p {
-    padding: 20px;
-}
-
 #services section {
     display: grid;
     grid-template-columns: 1fr;
@@ -240,10 +232,6 @@ input:checked ~ ul {
     border-radius: 10px;
 }
 
-#services h2 {
-    padding: 20px;
-}
-
 #services h3 {
     font-size: 125%;
     font-weight: bolder;
@@ -251,8 +239,50 @@ input:checked ~ ul {
 }
 
 #services p {
-    
+    padding: 0px;
 }
+
+#results {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#results h3 {
+    font-size: 175%;
+    font-weight: 700;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: var(--black);
+}
+
+th {
+    background-color: var(--black);
+}
+
+th, td {
+    border: 1px solid var(--charcoal);
+    padding: 10px;
+    height: 35px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--charcoal);
+}
+
+#contact {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 
 
 
