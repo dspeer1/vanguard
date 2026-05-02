@@ -4,6 +4,7 @@
 
 /* IMPORT "INTER" FROM GOOGLE FONTS"
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -69,6 +70,7 @@ table {
 body {
     background-color: var(--charcoal);
     font-family: "Inter", sans-serif;
+    line-height: 25px;
 }
 
 header {
@@ -86,6 +88,10 @@ header section {
 
 header img {
     width: 75px;
+}
+
+main {
+    background-color: var(--white);
 }
 
 h1 {
@@ -191,10 +197,8 @@ input:checked ~ ul {
 }
 
 #hero p {
-    font-size: 90%;
     color: var(--white);
     padding: 10px;
-    line-height: 20px;
 }
 
 #hero a {
@@ -216,6 +220,43 @@ input:checked ~ ul {
     gap: 15px;
     max-width: 400px;
 }
+
+#about h2 {
+    font-weight: 700;
+    padding: 20px;
+}
+
+#about p {
+    padding: 20px;
+}
+
+#services section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#services h2 {
+    padding: 20px;
+}
+
+#services h3 {
+    font-size: 125%;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+#services p {
+    
+}
+
+
+
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
