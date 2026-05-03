@@ -308,7 +308,7 @@ input:checked ~ ul {
 #results {
     background-color: var(--blue);
     color: var(--white);
-    margin-top: -50px;
+    margin-top: -75px;
     padding-bottom: 75px;
 }
 
@@ -414,13 +414,16 @@ tr:nth-child(odd) {
 }
 
 #contact p {
-    padding: 20px;
+    padding: 5px;
+    margin: 10px 10px;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     background-color: var(--black);
     color: var(--white);
-    padding: 20px;
+    padding: 5px;
 }
 
 label {
